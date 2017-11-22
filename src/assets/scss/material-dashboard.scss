@@ -1,0 +1,14 @@
+//variables and mixins
+@import "variables";
+@import "mixins";
+@import "shadows";
+
+//plugin css
+@import "plugins/plugin-nouislider";
+@import "plugins/animate";
+@import "plugins/perfect-scrollbar";
+
+// Core CSS
+@import "typography";
+@import "sidebar-and-main-panel";
+@import "footers";

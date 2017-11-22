@@ -1,13 +1,21 @@
-<div class="bounds">
-  <div class="content" fxLayout="row" fxLayout.xs="column" fxFlexFill>
-    <div fxFlex="15" class="sec1" fxFlex.xs="55">
-      first-section
+<div class="wrapper">
+  <mat-sidenav-container fxLayout="row" fxLayout.xs="column" fxFlexFill>
+    <mat-sidenav #sidenav class="sidebar" fxFlex="30" fxFlex.xs="70" mode="side" opened="true">
+        <div class="logo">
+            <img class="img" src="../assets/images/angular.png">
+            <a href="" class="simple-text">
+                Angular Showcase
+            </a>
+        </div>
+        <mat-toolbar color="primary">
+            <mat-toolbar-row>
+              Toolbar 
+            </mat-toolbar-row>
+          </mat-toolbar>
+    </mat-sidenav>
+
+    <div fxFlex="70" fxFlex.xs="30">
+        <router-outlet></router-outlet>
     </div>
-    <div fxFlex="30" class="sec2">
-      second-section
-    </div>
-    <div fxFlex="55" class="sec3" fxFlex.xs="15">
-      third-section
-    </div>
-  </div>
+  </mat-sidenav-container>
 </div>
