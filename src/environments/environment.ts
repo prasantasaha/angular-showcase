@@ -4,5 +4,11 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  spotify: {
+    apiBaseUrl: 'https://api.spotify.com/v1/',
+    authUrl: 'https://accounts.spotify.com/authorize',
+    clientId: 'be41998f27514e8da351aec488c49a8d',
+    oAuthProxyEndPoint: 'assets/html/oauth-proxy.html'
+  }
 };

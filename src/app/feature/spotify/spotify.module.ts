@@ -4,6 +4,8 @@ import { SpotifyComponent } from './spotify.component';
 @NgModule({
   declarations: [
     SpotifyComponent
-  ]
+  ],
+  imports: [],
+  providers: [],
 })
-export module SpotifyModule { }
+export class SpotifyModule { }

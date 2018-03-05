@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { NoPreloading, RouterModule, Routes } from '@angular/router';
 import { PageNotFoundComponent } from './feature/common/page-not-fount.component';
 import { CommonFeatureModule } from './feature/common/common-feature.module';
+import { SpotifyModule } from './feature/spotify/spotify.module';
 
 const appRoutes: Routes = [
     {
@@ -19,7 +20,8 @@ const appRoutes: Routes = [
     imports: [
         RouterModule.forRoot(appRoutes, { preloadingStrategy: NoPreloading }),
         CommonModule,
-        CommonFeatureModule
+        CommonFeatureModule,
+        SpotifyModule
     ],
     exports: [
         RouterModule

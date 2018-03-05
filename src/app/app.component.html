@@ -1,8 +1,8 @@
 <div class="wrapper">
   <mat-sidenav-container fxLayout="row" fxLayout.xs="column" fxFlexFill>
-    <mat-sidenav #sidenav class="sidebar" fxFlex="30" fxFlex.xs="70" mode="side" opened="true">
+    <mat-sidenav #sidenav class="sidebar" mode="side" opened="true">
         <div class="logo">
-            <img class="img" src="../assets/images/angular.png">
+            <img class="img" src="../assets/images/angular.png" width="200px">
             <a href="" class="simple-text">
                 Angular Showcase
             </a>
@@ -13,8 +13,7 @@
             </mat-toolbar-row>
           </mat-toolbar>
     </mat-sidenav>
-
-    <div fxFlex="70" fxFlex.xs="30">
+    <div>
         <router-outlet></router-outlet>
     </div>
   </mat-sidenav-container>
